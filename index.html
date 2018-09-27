@@ -140,98 +140,49 @@
       </div>
     </section>
 
-    <section class="p-0" id="portfolio">
-      <div class="container-fluid p-0">
-        <div class="row no-gutters popup-gallery">
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/1.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/1.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                    Project Name
-                  </div>
-                </div>
-              </div>
-            </a>
+    <section class="bg-light" id="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">My latest projects:</h2>
+            <hr class="my-4">
+            <br>
           </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/2.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/2.jpg" alt="">
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-6 portfolio-item">
+            <a class="portfolio-link portfolio-box" data-toggle="modal" href="#portfolioModal1">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                    Project Name
+                    See more details
                   </div>
                 </div>
               </div>
+              <img class="img-fluid" src="img/portfolio/thumbnails/pocketlobby.jpg" alt="">
             </a>
+            <div class="portfolio-caption text-center">
+              <h4>Open Source Rails / React</h4>
+              <p class="text-muted">Pocket Lobby</p>
+            </div>
           </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/3.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/3.jpg" alt="">
+          <div class="col-md-6 col-sm-6 portfolio-item">
+            <a class="portfolio-link portfolio-box" data-toggle="modal" href="#portfolioModal2">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                    Project Name
+                    See more details
                   </div>
                 </div>
               </div>
+              <img class="img-fluid" src="img/portfolio/thumbnails/zaxyusa.png" alt="">
             </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/4.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/4.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                    Project Name
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/5.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/5.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                    Project Name
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/6.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/6.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                    Project Name
-                  </div>
-                </div>
-              </div>
-            </a>
+            <div class="portfolio-caption text-center">
+              <h4>Rails / Vtex E-commerce</h4>
+              <p class="text-muted">Zaxy and Cartago websites</p>
+            </div>
           </div>
         </div>
       </div>
@@ -267,6 +218,113 @@
         </div>
       </div>
     </section>
+
+    <!-- Portfolio Modals -->
+
+    <!-- Modal 1 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container-fluid">
+            <div class="row bg-primary text-center text-white">
+              <div class="col-lg-12 mx-auto">
+                <div class="modal-header text-center" style="border-bottom: 0; display: inline-block;">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase" style="display: inline-block;">Pocket Lobby <i class="fa fa-times close text-white" data-dismiss="modal"></i></h2>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <p class="item-intro text-muted text-center">Open Source Rails / React</p>
+                  <hr>
+                  <p><b>Goal of the project:</b></p>
+                  <p>Build an open source app that provides simple explanations of what United States' Congress is voting on.</p>
+                  <p><b>Technologies I've worked with:</b></p>
+                  <ul>
+                    <li>Front-End: React, HTML, CSS</li>
+                    <li>Back-end: Ruby on Rails, PostgreSQL</li>
+                    <li>Testing: Rspec and shoulda-matchers gem</li>
+                    <li>Other: Docker</li>
+                  </ul>
+                  <div class="modal-footer text-center" style="display: block;">
+                    <a target="_blank" class="btn btn-primary text-center" href="https://github.com/PocketLobby/constituents">
+                      View on Github
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content" style="border-radius: 0;">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container-fluid">
+            <div class="row bg-primary text-center text-white">
+              <div class="col-lg-12 mx-auto">
+                <div class="modal-header text-center" style="border-bottom: 0; display: inline-block;">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase" style="display: inline-block;">ECOMMERCE STORES <i class="fa fa-times close text-white" data-dismiss="modal"></i></h2>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12 mx-auto">
+                <div class="modal-body">
+                  <p class="item-intro text-muted text-center">
+                    ZAXY USA & CARTAGO SANDALS websites
+                  </p>
+                  <hr>
+                  <p><b>Goal of the project:</b></p>
+                  <p>Create ecommerce websites for Zaxy and Cartago shoes using the Vtex Cloud Commerce platform.</p>
+                  <p><b>Technologies used:</b></p>
+                  &emsp;<b>Front-End:</b> HTML, CSS, Bootstrap, JavaScript, jQuery, Vtex<br>
+                  &emsp;<b>Back-end:</b> Ruby on Rails, PostgreSQL<br>
+                  &emsp;<b>APIs:</b> Vtex, CorpSystem Sales Tax SaaS (STS)<br>
+                  &emsp;<b>Deployment:</b> Heroku<br>
+                  &emsp;<b>Gems:</b> Httparty, Clockwork, Slack-notifier, Figaro<br>
+                  <br>
+                  <p><b>Development of the project:</b></p>
+                  <p>
+                    These were my first ecommerce websites and my work led the company to be awarded the US Revelation Partner of 2017 by Vtex.  The projects challenged me to learn a whole new platform in a limited amount of time.  I also had to make sure that the integration with other systems worked seamlessly.
+                  </p>
+                  <p><b>What I learned:</b></p>
+                  <p>
+                    Apart from learning to use a comprehensive ecommerce platform, I acquired vast knowledge about logistics, SEO and key concepts of selling online.
+                    On the technical side, I had the opportunity to use Httparty and the Net::FTP class for the first time.
+                  </p>
+                  <div class="modal-footer text-center" style="display: block;">
+                    <a target="_blank" class="btn btn-primary text-center" href="https://www.zaxyusa.com/">
+                      View Zaxy Store
+                    </a>
+                    <a target="_blank" class="btn btn-primary text-center" href="https://www.cartagosandals.com/">
+                      View Cartago Store
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
