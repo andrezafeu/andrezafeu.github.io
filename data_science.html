@@ -73,8 +73,8 @@
       </div>
       <div class="container">
         <div class="row">
-          <div class="col-md-6 col-sm-6 portfolio-item">
-            <a class="portfolio-link portfolio-box" data-toggle="modal" href="#portfolioModal1">
+          <div class="col-md-4 col-sm-4 portfolio-item">
+            <a class="portfolio-link portfolio-box" data-toggle="modal" href="#portfolio-modal-1">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
@@ -82,15 +82,31 @@
                   </div>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/thumbnails/maternal_mortality.png" alt="Maternal Mortality in the USA">
+              <img class="img-fluid" src="img/portfolio/thumbnails/news_classification.png" alt="News Classification">
             </a>
             <div class="portfolio-caption text-center">
-              <h4>Maternal Mortality in the USA (advanced)</h4>
-              <p class="text-muted">An advanced analysis of maternal mortality in the USA (in progress)</p>
+              <h4>Classifying news articles</h4>
+              <p class="text-muted">Using Natural Language Processing to classify news articles into categories</p>
             </div>
           </div>
-          <div class="col-md-6 col-sm-6 portfolio-item">
-            <a class="portfolio-link portfolio-box" data-toggle="modal" href="#portfolioModal2">
+          <div class="col-md-4 col-sm-4 portfolio-item">
+            <a class="portfolio-link portfolio-box" data-toggle="modal" href="#portfolio-modal-2">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    See more details
+                  </div>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/thumbnails/text.png" alt="Optical Character Recognition">
+            </a>
+            <div class="portfolio-caption text-center">
+              <h4>Optical Character Recognition (OCR)</h4>
+              <p class="text-muted">Using OCR to scrape text from scanned pdf documents</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 portfolio-item">
+            <a class="portfolio-link portfolio-box" data-toggle="modal" href="#portfolio-modal-3">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
@@ -105,9 +121,41 @@
               <p class="text-muted">An analysis of maternal mortality among Black Women in the USA</p>
             </div>
           </div>
+          <div class="col-md-4 col-sm-4 portfolio-item">
+            <a class="portfolio-link portfolio-box" data-toggle="modal" href="#portfolio-modal-4">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    See more details
+                  </div>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/thumbnails/disasters.png" alt="Meteorological Disasters">
+            </a>
+            <div class="portfolio-caption text-center">
+              <h4>Meteorological Disasters in the USA</h4>
+              <p class="text-muted">An analysis of Meteorological Disasters in the USA</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 portfolio-item">
+            <a class="portfolio-link portfolio-box" data-toggle="modal" href="#portfolio-modal-5">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    See more details
+                  </div>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/thumbnails/nyc_.png" alt="Vehicle Collisions in NYC">
+            </a>
+            <div class="portfolio-caption text-center">
+              <h4>Vehicle Collisions in NYC</h4>
+              <p class="text-muted">An analysis of vehicle collisions in NYC </p>
+            </div>
+          </div>
         </div>
       </div>
-
+      <br>
       <div class="container" id="analytics">
         <div class="row">
           <div class="col-lg-12 text-center">
@@ -120,7 +168,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12 col-sm-12 portfolio-item">
-            <a class="portfolio-link portfolio-box" data-toggle="modal" href="#portfolioModal3">
+            <a class="portfolio-link portfolio-box" data-toggle="modal" href="#portfolio-modal-6">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
@@ -150,7 +198,7 @@
     <!-- Modals -->
 
     <!-- Modal 1 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="portfolio-modal-1" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="close-modal" data-dismiss="modal">
@@ -163,7 +211,7 @@
               <div class="col-lg-12 mx-auto">
                 <div class="modal-header text-center" style="border-bottom: 0; display: inline-block;">
                   <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase" style="display: inline-block;">Maternal Mortality (advanced) <i class="fa fa-times close text-white" data-dismiss="modal"></i></h2>
+                  <h2 class="text-uppercase" style="display: inline-block;">Classifying news articles<i class="fa fa-times close text-white" data-dismiss="modal"></i></h2>
                 </div>
               </div>
             </div>
@@ -171,27 +219,32 @@
               <div class="col-lg-12 mx-auto">
                 <div class="modal-body">
                   <!-- Project Details Go Here -->
-                  <p class="item-intro text-muted text-center">An advanced analysis of maternal mortality in the USA (in progress)</p>
+                  <p class="item-intro text-muted text-center">Creating a NLP classifier to classify news articles into categories</p>
                   <hr>
                   <p><b>Goal of the project:</b></p>
-                  <p>Advance the analysis I had started during my Data Science for All fellowship.</p>
+                  <p>
+                    Implement a model or algorithm that can classify news articles of (at least) the type "earn" using the reuters 21578 dataset for training.
+                  </p>
                   <p><b>Technologies used:</b></p>
                   <ul>
                     <li><b>Language:</b> Python</li>
-                    <li><b>Libraries:</b> Pandas, Matplotlib, Seaborn, Numpy, Sklearn, Statsmodels</li>
+                    <li><b>Libraries:</b> Nltk, Sklearn, BeautifulSoup, Pandas, Re</li>
                   </ul>
                   <p><b>Skills:</b></p>
                   <ul>
-                    <li>Data cleaning & wrangling</li>
-                    <li>Feature engineering</li>
                     <li>Exploratory data analysis</li>
-                    <li>Logistic regression</li>
-                    <li>Machine Learning</li>
+                    <li>Tokenization</li>
+                    <li>Text Vectorization</li>
+                    <li>Machine Learning (Support Vector Machines - Linear implementation)</li>
+                    <li>Trade-off analysis</li>
+                    <li>Model Tuning</li>
+                    <li>Model Assessment</li>
+                    <li>Making Predictions</li>
                   </ul>
                   <br>
                   <div class="modal-footer text-center" style="display: block;">
-                    <a target="_blank" class="btn btn-primary text-center" href="https://github.com/andrezafeu/maternal_mortality">
-                      View on Github
+                    <a target="_blank" class="btn btn-primary text-center" href="#">
+                      Available on Github soon
                     </a>
                   </div>
                 </div>
@@ -201,9 +254,54 @@
         </div>
       </div>
     </div>
-
     <!-- Modal 2 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="portfolio-modal-2" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container-fluid">
+            <div class="row bg-primary text-center text-white">
+              <div class="col-lg-12 mx-auto">
+                <div class="modal-header text-center" style="border-bottom: 0; display: inline-block;">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase" style="display: inline-block;">OCR for text scraping <i class="fa fa-times close text-white" data-dismiss="modal"></i></h2>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <p class="item-intro text-muted text-center">Using OCR to scrape text</p>
+                  <hr>
+                  <p><b>Goal:</b></p>
+                  <p>Extract text from scanned pdf documents to Excel.</p>
+                  <p><b>Technologies used:</b></p>
+                  <ul>
+                    <li><b>Language:</b> Python</li>
+                    <li><b>Libraries:</b> Pdf2image, Pytesseract, Pandas, Re, Os, Calendar, String, Datetime</li>
+                  </ul>
+                  <p><b>Skills:</b></p>
+                  <ul>
+                    <li>Image based text scraping</li>
+                  </ul>
+                  <br>
+                  <div class="modal-footer text-center" style="display: block;">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="portfolio-modal modal fade" id="portfolio-modal-3" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content" style="border-radius: 0;">
           <div class="close-modal" data-dismiss="modal">
@@ -236,7 +334,7 @@
                   </ul>
                   <p><b>Skills:</b></p>
                   <ul>
-                    <li><b>Technical / analytical skills:</b> Data cleaning & wrangling, feature engineering, exploratory data analysis, logistic regression, machine learning</li>
+                    <li><b>Technical / analytical skills:</b> Data cleaning & wrangling, feature engineering, exploratory data analysis, machine learning (logistic regression)</li>
                     <li><b>Soft skills:</b> Leadership, communicating technical concepts to a non technical audience</li>
                   </ul>
                   <p><b>Development of the project and challenges:</b></p>
@@ -250,6 +348,9 @@
                     <a target="_blank" class="btn btn-primary text-center" href="https://drive.google.com/file/d/1XVQMd9pYlE0zJuOquh3QrT46xbnVUnZe/view?usp=sharing">
                       View Final Report
                     </a>
+                    <a target="_blank" class="btn btn-primary text-center" href="https://github.com/andrezafeu/maternal_mortality">
+                      View on Github
+                    </a>
                   </div>
                 </div>
               </div>
@@ -259,7 +360,123 @@
       </div>
     </div>
 
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="portfolio-modal-4" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content" style="border-radius: 0;">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container-fluid">
+            <div class="row bg-primary text-center text-white">
+              <div class="col-lg-12 mx-auto">
+                <div class="modal-header text-center" style="border-bottom: 0; display: inline-block;">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase" style="display: inline-block;">Meteorological Disasters<i class="fa fa-times close text-white" data-dismiss="modal"></i></h2>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12 mx-auto">
+                <div class="modal-body">
+                  <p class="item-intro text-muted text-center">
+                    An analysis of meteorological disasters in the USA
+                  </p>
+                  <hr>
+                  <p><b>Business problems:</b></p>
+                  <ul>
+                    <li>Find out which storm event types are more likely to become disasters, and in which locations, as measured by the number of deaths, injuries, and economic damage they cause.</li>
+                    <li>Conduct a preliminary assessment of whether the Post-Katrina Emergency Management Reform Act of 2006 had any impact on the severity of the disasters that occurred after the bill was signed.</li>
+                  </ul>
+                  <p><b>Technologies used:</b></p>
+                  <ul>
+                    <li><b>Language:</b> Python</li>
+                    <li><b>Libraries:</b> Pandas, Matplotlib, Seaborn, Folium, Pingouin</li>
+                  </ul>
+                  <p><b>Skills:</b></p>
+                  <ul>
+                    <li>Data analysis</li>
+                    <li>Data visualization</li>
+                    <li>Summary Statistics</li>
+                    <li>Hypothesis testing (t-test)</li>
+
+                  </ul>
+                  <p><b>About:</b></p>
+                  <p>
+                    This work was done as an Extended Case required for graduation in the Data Science fellowship by Correlation One.
+                  </p>
+                    The Extended Case was structured in a way that we had to code and analyze the data in order to answer the specific business questions.
+                  <p>
+                  <div class="modal-footer text-center" style="display: block;">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolio-modal-5" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content" style="border-radius: 0;">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container-fluid">
+            <div class="row bg-primary text-center text-white">
+              <div class="col-lg-12 mx-auto">
+                <div class="modal-header text-center" style="border-bottom: 0; display: inline-block;">
+                  <h2 class="text-uppercase" style="display: inline-block;">Vehicle Collisions in NYC<i class="fa fa-times close text-white" data-dismiss="modal"></i></h2>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12 mx-auto">
+                <div class="modal-body">
+                  <p class="item-intro text-muted text-center">
+                    An analysis of vehicle collisions in NYC
+                  </p>
+                  <hr>
+                  <p><b>Goal of the project:</b></p>
+                  <p>Format the given data and provide visualizations that would answer specific questions.</p>
+                  <p><b>Technologies used:</b></p>
+                  <ul>
+                    <li><b>Language:</b> Python</li>
+                    <li><b>Libraries:</b> Json, Pandas, Matplotlib, Seaborn, Numpy</li>
+                  </ul>
+                  <p><b>Skills:</b></p>
+                  <ul>
+                    <li>Data analysis</li>
+                    <li>Data visualization</li>
+                    <li>Feature engineering</li>
+                  </ul>
+                  <p><b>About:</b></p>
+                  <p>
+                    This work was done as an Extended Case required for graduation in the Data Science fellowship by Correlation One.
+                  </p>
+                    The Extended Case was structured in a way that we had to code and analyze the data in order to answer the specific questions presented.
+                  <p>
+                  <p>Example of questions:</p>
+                  <ul>
+                    <li>How does the number of accidents vary throughout a single day or week?</li>
+                    <li>What's the number of accidents per square mile in each borough?</li>
+                    <li>Which vehicle type and borough pairs are most involved in accidents?</li>
+                  </ul>
+                  <div class="modal-footer text-center" style="display: block;">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolio-modal-6" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="close-modal" data-dismiss="modal">
